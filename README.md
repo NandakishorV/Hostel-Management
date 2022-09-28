@@ -3,9 +3,9 @@
 USE XAMPP- for running localhost mysqli server
 run index.php directly on web by calling localhost/<absolute path of index.php>
 
-SQL CODE-
+### SQL CODE-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--Creating gatePass table
+- Creating gatePass table
 CREATE TABLE gatepass(
     regno int(10) NOT NULL,
     name varchar(20) NOT NULL,
@@ -21,16 +21,16 @@ CREATE TABLE gatepass(
     CONSTRAINT ch_stat CHECK (stat IN("PENDING","APPROVED","DENIED")
 );
 
--Format for inserting
+- Format for inserting
 INSERT INTO gatepass VALUES(20500167,"Nandakishor",1,123,"2022-8-10","21:00","2022-8-12","12:00","Going Home","PENDING");
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--Creating hosteldetails table
+- Creating hosteldetails table
 CREATE TABLE roomdetails(
     regno int(10) PRIMARY KEY NOT NULL,
     hostelno int(2) NOT NULL,
     roomno int(2) NOT NULL
 );
--Format for inserting
+- Format for inserting
 INSERT INTO roomdetails VALUES(205001067,1,123);
 
 ![database](https://user-images.githubusercontent.com/80710226/183067971-d68efd8b-66c2-4283-95b4-5340ab6bf93d.jpg)
